@@ -1,3 +1,10 @@
+/*
+ * Colors.js
+ * 
+ * This file contains the colors used throughout the app.
+ * 
+ */ 
+
 const tintColor = '#2f95dc';
 
 export default {

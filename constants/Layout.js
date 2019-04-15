@@ -1,3 +1,10 @@
+/*
+ * Layout.js
+ * 
+ * This file handles the dimensions of the app.
+ * 
+ */ 
+
 import { Dimensions } from 'react-native';
 
 const width = Dimensions.get('window').width;

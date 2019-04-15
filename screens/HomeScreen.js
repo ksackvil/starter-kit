@@ -1,3 +1,15 @@
+/*
+ * HomeScreen.js
+ * 
+ * This file handles the render for the HomeScreen. The HomeScreenRender class does the
+ * rendering, the HomeScreen class only connects the HomeScreenRender class to its container -
+ * notice how use HomeScreen class to subscribe to the desired stores.
+ * 
+ * Invariant:
+ *      HomeCont.js must exist
+ * 
+ */ 
+
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Subscribe } from "unstated";
@@ -25,7 +37,7 @@ class HomeScreenRender extends React.Component {
     }
 }
 
-// HACK: allows the usage of Cont outside of childs render
+// HACK: allows the usage of Cont outside of child's render
 export default class HomeScreen extends React.Component {
     constructor(props) {
         super(props);

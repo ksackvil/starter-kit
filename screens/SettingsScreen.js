@@ -1,3 +1,15 @@
+/*
+ * SettingsScreen.js
+ * 
+ * This file handles the render for the SettingsScreen. The SettingsScreenRender class does the
+ * rendering, the SettingsScreen class only connects the SettingsScreenRender class to its container -
+ * notice how use SettingsScreen class to subscribe to the desired stores.
+ * 
+ * Invariant:
+ *      SettingsScreen.js must exist
+ * 
+ */ 
+
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Subscribe } from "unstated";

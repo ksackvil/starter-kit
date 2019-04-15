@@ -1,3 +1,15 @@
+/*
+ * LinksScreen.js
+ * 
+ * This file handles the render for the LinksScreen. The LinksScreenRender class does the
+ * rendering, the LinksScreen class only connects the LinksScreenRender class to its container -
+ * notice how use LinksScreen class to subscribe to the desired stores.
+ * 
+ * Invariant:
+ *      LinksCont.js must exist
+ * 
+ */ 
+
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Subscribe } from "unstated";

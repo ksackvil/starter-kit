@@ -1,3 +1,12 @@
+/*
+ * App.js
+ * 
+ * START HERE! This file is the starting point for the app. It is responsible for loading
+ * all resources as well as setting up global constants, only rarely should you have to edit
+ * this file.
+ * 
+ */ 
+
 import React from "react";
 import { Platform, StatusBar, StyleSheet, View } from "react-native";
 import { AppLoading, Asset, Font, Icon } from "expo";
@@ -13,6 +22,7 @@ export default class App extends React.Component {
             isLoadingComplete: false
         };
 
+        // This line allows AppCont to be accessed throughout the app (by all screens)
         global.cont = AppCont;
     }
 
@@ -48,9 +58,6 @@ export default class App extends React.Component {
             Font.loadAsync({
                 // This is the font that we are using for our tab bar
                 ...Icon.Ionicons.font,
-                // We include SpaceMono because we use it in HomeScreen.js. Feel free
-                // to remove this if you are not using it in your app
-                "space-mono": require("./assets/fonts/SpaceMono-Regular.ttf")
             })
         ]);
     };
